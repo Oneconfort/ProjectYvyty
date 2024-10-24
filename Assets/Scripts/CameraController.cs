@@ -13,7 +13,7 @@ public class CameraController : MonoBehaviour
     bool useOffsetValues, invertY;
     public float rotateSpeed, maxViewAngle, minViewAngle;
     public Transform pivot;
-
+   public bool cave;
     void Awake()
     {
         if (cameraController == null)
@@ -48,7 +48,7 @@ public class CameraController : MonoBehaviour
 
     private void MoveMainCamera()
     {
-        if (GameController.controller.uiController.visivelpause || GameController.controller.Player.caverna == false) return;
+        if (GameController.controller.uiController.visivelpause || GameController.controller.Player.caverna == false || cave == true) return;
         cam.orthographic = false;
         pivot.transform.position = GameController.controller.Player.transform.position;
 
@@ -90,10 +90,11 @@ public class CameraController : MonoBehaviour
 
     void MoveCameraCaverna()
     {
-        if (GameController.controller.uiController.visivelpause || GameController.controller.Player.caverna == true) return;
+        if (GameController.controller.uiController.visivelpause || GameController.controller.Player.caverna == true || cave == true) return;
 
         Vector3 novaPosicao = GameController.controller.Player.transform.position + offsetCamCaverna;
         novaPosicao.y = 7.489f;
         transform.position = novaPosicao;
     }
+   
 }

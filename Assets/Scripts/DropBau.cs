@@ -8,12 +8,14 @@ public class DropBau : MonoBehaviour
     public GameObject[] drops;
     public GameObject spawnDrop;
     public bool functionActivated = true;
-
+    public GameObject tampaBau;
    
     public void SpawnItemBau()
     {
         if(functionActivated == true)
         {
+           tampaBau.transform.Rotate(0, 0, -120);
+
             spawnDrop.SetActive(true);
 
             int chance = Random.Range(1, 100);

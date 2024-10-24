@@ -7,12 +7,11 @@ public class ButtonScript : MonoBehaviour
     public int ordemBotao;
     public int indicePlataforma;
     public bool ativado = false;
-    private Renderer rendererBotao;
+    public GameObject alavanca;
     private PuzzleManager gerenciadorDePuzzle;
 
     void Start()
     {
-        rendererBotao = GetComponent<Renderer>();
         gerenciadorDePuzzle = FindObjectOfType<PuzzleManager>();
         AtualizarAparenciaDoBotao();
     }
@@ -48,11 +47,11 @@ public class ButtonScript : MonoBehaviour
     {
         if (ativado)
         {
-            rendererBotao.material.color = Color.green; 
+            alavanca.transform.rotation = Quaternion.Euler(0, -45, 45);
         }
         else
         {
-            rendererBotao.material.color = Color.red;
+            alavanca.transform.rotation = Quaternion.Euler(0, -45, 0);
         }
     }
 }

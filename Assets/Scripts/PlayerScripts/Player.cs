@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
 {
     // [SerializeField] private LayerMask Default;
 
-    public float speed, rotateSpeed;
+     float speed = 10, rotateSpeed;
     private float gravity = -9.81f;
     Rigidbody rb;
     public GameObject playerModel;
@@ -257,10 +257,7 @@ public class Player : MonoBehaviour
             case "Inimigo":
                 TomaDano(collider.gameObject.GetComponent<Inimigo>().GetDamage());
                 break;
-            case "Inimigo1":
-                TomaDano(collider.gameObject.GetComponent<Inimigo>().GetDamage());
-                break;
-            case "ParedeFim":
+              case "ParedeFim":
                 TomaDano(collider.gameObject.GetComponent<Inimigo>().GetDamage());
                 CameraController.cameraController.cam.orthographic = false;
                 caverna = true;
@@ -291,6 +288,49 @@ public class Player : MonoBehaviour
                 else
                 {
                     transform.position = new Vector3(62.17f, 0.79f, 702.57f);
+                    CameraController.cameraController.cam.orthographic = true;
+                    CameraController.cameraController.transform.rotation = Quaternion.Euler(0, -180, 0);
+                    caverna = false;
+                }
+                break;
+            
+            case "Caverna2":
+                if (caverna == false)
+                {
+                   CameraController.cameraController.cave = false;
+                    speed = 10;
+                    transform.position = new Vector3(246.1f, -0.11f, 355.8f);
+                    CameraController.cameraController.cam.orthographic = false;
+                    caverna = true;
+                }
+                else//entra
+                {
+                    CameraController.cameraController.transform.position = new Vector3(823.47f, 7.488f, 275.77f);
+
+                    CameraController.cameraController.cave = true;
+                    speed = 5;
+                    transform.position = new Vector3(855.7f, -10.189f, 262.7f);
+                    CameraController.cameraController.cam.orthographic = true;
+                    CameraController.cameraController.transform.rotation = Quaternion.Euler(0, -180, 0);
+                    caverna = false;
+                }
+                break;
+            case "CavernaSaida2":
+                if (caverna == false)
+                {
+                    CameraController.cameraController.cave = false;
+                    transform.position = new Vector3(291.07f, 1.25f, 429.254f);
+                    speed = 10;
+                    CameraController.cameraController.cam.orthographic = false;
+                    caverna = true;
+                }
+                else
+                {
+                    CameraController.cameraController.transform.position = new Vector3(823.47f, 7.488f, 275.77f);
+                    CameraController.cameraController.cave = true;
+                    speed = 5;
+                    transform.position = new Vector3(791.8f, 14.2f, 262.71f);
+                  
                     CameraController.cameraController.cam.orthographic = true;
                     CameraController.cameraController.transform.rotation = Quaternion.Euler(0, -180, 0);
                     caverna = false;

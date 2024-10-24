@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using Unity.VisualScripting;
 using UnityEngine;
 using static Mecanismo;
@@ -138,9 +139,13 @@ public class PuzzleManager : MonoBehaviour
  }*/
 
     public Mecanismo[] plataformasPuzzle;
+    public GameObject gancho;
+    int blendShapeIndex = 0; 
+    SkinnedMeshRenderer skinnedMeshRenderer;
 
     void Start()
     {
+        skinnedMeshRenderer = gancho.GetComponent<SkinnedMeshRenderer>();
         foreach (var puzzle in plataformasPuzzle)
         {
             puzzle.posicaoInicial = puzzle.plataforma.transform.position;
@@ -151,6 +156,16 @@ public class PuzzleManager : MonoBehaviour
     {
 
         Mover();
+    }
+    void MoveGancho()
+    {
+        float currentBlendShapeWeight = skinnedMeshRenderer.GetBlendShapeWeight(blendShapeIndex);
+
+        if (currentBlendShapeWeight < 100)
+        {
+            float newBlendShapeWeight = Mathf.Min(currentBlendShapeWeight + (17 * Time.deltaTime), 100);
+            skinnedMeshRenderer.SetBlendShapeWeight(blendShapeIndex, newBlendShapeWeight);
+        }
     }
 
     public void BotaoPressionado(int ordemDoBotao, ButtonScript scriptBotao, int indicePlataforma)
@@ -233,6 +248,7 @@ public class PuzzleManager : MonoBehaviour
                         {
                             puzzle.plataformaAtiva = false;
                         }
+                        MoveGancho();
                     }
                     break;
 

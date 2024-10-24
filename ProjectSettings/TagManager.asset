@@ -19,8 +19,11 @@ TagManager:
   - Ground
   - Tirolesa
   - Lanterna
-  - Inimigo1
   - ObjetoI
+  - CavernaSaida2
+  - Caverna2
+  - Estalactite
+  - Caverna
   layers:
   - Default
   - TransparentFX

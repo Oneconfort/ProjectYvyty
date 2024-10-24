@@ -190,7 +190,14 @@ public class LanternaPlayer : MonoBehaviour
             naPosicao = true;
             rb.isKinematic = true;
             lanterna.transform.SetParent(alvo.transform);
-            lanterna.transform.localPosition = new Vector3(0, 2, 0.5F);
+            if (detectedInIteration != DetectedType.Caixa)
+            {
+                lanterna.transform.localPosition = new Vector3(-0.046f, 0.266f, 0f); 
+            }
+            else
+            {
+                lanterna.transform.localPosition = new Vector3(0, 2, 0.5F);
+            }
             lanterna.transform.localRotation = Quaternion.identity;
         }
 

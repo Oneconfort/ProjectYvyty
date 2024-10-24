@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &40097142015838360
+--- !u!1 &68270049059767960
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1918669332209557543}
-  - component: {fileID: 3858627509230030501}
-  - component: {fileID: 3082836632869771399}
+  - component: {fileID: 2823251806118324489}
+  - component: {fileID: 2528339773523234844}
+  - component: {fileID: 1046187327977643244}
   m_Layer: 0
-  m_Name: Caixa
+  m_Name: Escada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1918669332209557543
+--- !u!4 &2823251806118324489
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40097142015838360}
+  m_GameObject: {fileID: 68270049059767960}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.421, z: 0}
-  m_LocalScale: {x: 1.9885591, y: 1.9885591, z: 1.9885591}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -209.69414, y: 11.94, z: 211.04308}
+  m_LocalScale: {x: 1.6629, y: 1.936447, z: 1.6629}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6414190668855190897}
+  m_Children:
+  - {fileID: 6099618705972427937}
+  - {fileID: 3029276295870440750}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3858627509230030501
+--- !u!33 &2528339773523234844
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40097142015838360}
-  m_Mesh: {fileID: -1638080049769802040, guid: aecb44e361c2ae74d8854ca84929250e, type: 3}
---- !u!23 &3082836632869771399
+  m_GameObject: {fileID: 68270049059767960}
+  m_Mesh: {fileID: 4003918215592742965, guid: aecb44e361c2ae74d8854ca84929250e, type: 3}
+--- !u!23 &1046187327977643244
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40097142015838360}
+  m_GameObject: {fileID: 68270049059767960}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -83,7 +85,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &7848034741481188106
+--- !u!1 &7216066951588915904
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,51 +93,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6414190668855190897}
-  - component: {fileID: 5829541178824483005}
-  - component: {fileID: 1756293471931642700}
-  - component: {fileID: 7374631017339300393}
-  - component: {fileID: -4369092908695887144}
-  - component: {fileID: 5961226249457702725}
+  - component: {fileID: 6099618705972427937}
+  - component: {fileID: 1927954663612249023}
+  - component: {fileID: 2809771410368632127}
   m_Layer: 0
-  m_Name: Fosforo
-  m_TagString: Fosforo
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Name: EscadaDegrau
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6414190668855190897
+--- !u!4 &6099618705972427937
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7848034741481188106}
+  m_GameObject: {fileID: 7216066951588915904}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1591222, y: -0.07965574, z: 1.27}
-  m_LocalScale: {x: 0.425103, y: 0.425103, z: 0.425103}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1.0000002, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1918669332209557543}
-  m_Father: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 2823251806118324489}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5829541178824483005
+--- !u!33 &1927954663612249023
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7848034741481188106}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &1756293471931642700
+  m_GameObject: {fileID: 7216066951588915904}
+  m_Mesh: {fileID: -4291716439546562551, guid: aecb44e361c2ae74d8854ca84929250e, type: 3}
+--- !u!23 &2809771410368632127
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7848034741481188106}
-  m_Enabled: 0
+  m_GameObject: {fileID: 7216066951588915904}
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -148,7 +146,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2bafec3d3ba825b4bb406abd10180e66, type: 2}
+  - {fileID: 2100000, guid: 45ffeae53411c3844a54b79ca375a576, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -170,13 +168,46 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &7374631017339300393
-SphereCollider:
+--- !u!1 &7964087352914194084
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7848034741481188106}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3029276295870440750}
+  - component: {fileID: 2016520589985666975}
+  - component: {fileID: 1414055409456405423}
+  m_Layer: 0
+  m_Name: Escada
+  m_TagString: Escada
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3029276295870440750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7964087352914194084}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.15635006, y: 1.5647217, z: 0}
+  m_LocalScale: {x: 0.60135907, y: 3.0984583, z: 0.9721572}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2823251806118324489}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+--- !u!65 &2016520589985666975
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7964087352914194084}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -189,15 +220,15 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 1.2198058
-  m_Center: {x: 0, y: -0.037964147, z: 0}
---- !u!135 &-4369092908695887144
-SphereCollider:
+  m_Size: {x: 0.4428553, y: 0.9979881, z: 0.6251461}
+  m_Center: {x: 0.7478655, y: -0.0010088881, z: 0.023484828}
+--- !u!65 &1414055409456405423
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7848034741481188106}
+  m_GameObject: {fileID: 7964087352914194084}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -210,32 +241,5 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!54 &5961226249457702725
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7848034741481188106}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
